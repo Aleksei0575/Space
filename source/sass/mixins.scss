@@ -1,3 +1,54 @@
+// Desktop first
+
+@mixin viewport--xl {
+  @media (max-width: $viewport--xxl - 1) {
+    @content;
+  }
+}
+
+// @mixin viewport--lav {
+//   @media (max-width: 1150px) {
+//     @content;
+//   }
+// }
+
+@mixin viewport--lg {
+  @media (max-width: $viewport--xl - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--md {
+  @media (max-width: $viewport--lg - 1) {
+    @content;
+  }
+}
+
+// @mixin viewport--av {
+//   @media (max-width: 825px) {
+//     @content;
+//   }
+// }
+
+// @mixin viewport--sav {
+//   @media (max-width: 750px) {
+//     @content;
+//   }
+// }
+
+@mixin viewport--sm {
+  @media (max-width: $viewport--md - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--xs {
+  @media (max-width: $viewport--sm - 1) {
+    @content;
+  }
+}
+
+
 @mixin btn-reset {
   padding: 0;
   background-color: transparent;
@@ -8,128 +59,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-@mixin font-h1 {
-  font-size: 72px;
-  font-weight: 700;
-
-  @media (max-width: $desktop-medium-width - 1) {
-    font-size: 60px;
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    font-size: 72px;
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    font-size: 60px;
-  }
-
-  @media (max-width: $tablet-width - 1) {
-    font-size: 36px;
-  }
-}
-
-@mixin font-h1-important {
-  font-size: 92px;
-  font-weight: 700;
-
-  @media (max-width: $desktop-medium-width - 1) {
-    font-size: 80px;
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    font-size: 92px;
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    font-size: 80px;
-  }
-
-  @media (max-width: $tablet-width - 1) {
-    font-size: 48px;
-  }
-}
-
-@mixin font-h2 {
-  font-size: 48px;
-  font-weight: 700;
-
-  @media (max-width: $desktop-medium-width - 1) {
-    font-size: 40px;
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    font-size: 48px;
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    font-size: 40px;
-  }
-
-  @media (max-width: $tablet-width - 1) {
-    font-size: 24px;
-  }
-}
-
-@mixin font-h2-important {
-  font-size: 56px;
-  font-weight: 700;
-
-  @media (max-width: $desktop-medium-width - 1) {
-    font-size: 48px;
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    font-size: 56px;
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    font-size: 48px;
-  }
-
-  @media (max-width: $tablet-width - 1) {
-    font-size: 30px;
-  }
-}
-
-@mixin font-h3 {
-  font-size: 30px;
-  font-weight: 700;
-
-  @media (max-width: $desktop-medium-width - 1) {
-    font-size: 24px;
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    font-size: 30px;
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    font-size: 24px;
-  }
-
-  @media (max-width: $tablet-width - 1) {
-    font-size: 20px;
-  }
-}
-
-@mixin font-h4 {
-  font-size: 24px;
-  font-weight: 700;
-
-  @media (max-width: $desktop-medium-width - 1) {
-    font-size: 20px;
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    font-size: 24px;
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    font-size: 20px;
-  }
 }
 
 @mixin font($font-size, $line-height) {
@@ -143,151 +72,15 @@
   display: block;
 }
 
-@mixin grid-item {
-  width: calc(100% / 5 - 40px);
-  margin-left: 39px;
-  margin-bottom: 40px;
-
-  @media (max-width: $desktop-max-width - 1) {
-    width: calc(100% / 5 - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    width: calc(100% / 3 - 40px);
-    margin-left: 40px;
-    margin-bottom: 40px;
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-
-  @media (max-width: $tablet-max-width - 1) {
-    width: calc(100% / 3 - 20px);
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: $tablet-width - 1) {
-    width: calc(100% / 2 - 20px);
-  }
-
-  @media (max-width: $mobile-max-width - 1) {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
-@mixin grid-min-item {
-  width: calc(100% / 3 - 40px);
-
-  @media (max-width: $desktop-max-width - 1) {
-    width: calc(100% / 3 - 30px);
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    width: calc(100% / 3 - 40px);
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    width: calc(100% / 3 - 30px);
-  }
-
-  @media (max-width: $tablet-max-width - 1) {
-    width: calc(100% / 3 - 20px);
-  }
-
-  @media (max-width: $tablet-width - 1) {
-    width: calc(100% / 2 - 20px);
-  }
-
-  @media (max-width: $mobile-max-width - 1) {
-    width: 100%;
-  }
-}
-
-@mixin grid-item-catalog {
-  width: calc(50% - 40px);
-  margin-left: 39px;
-  margin-bottom: 39px;
-
-  @media (max-width: $desktop-max-width - 1) {
-    width: calc(50% - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    width: 100%;
-    margin-left: 40px;
-    margin-bottom: 40px;
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-
-  @media (max-width: $tablet-max-width - 1) {
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: $mobile-max-width - 1) {
-    margin-left: 0;
-  }
-}
-
-@mixin grid-wrapper {
-  margin-left: -40px;
-  padding: 0;
-
-  @media (max-width: $desktop-max-width - 1) {
-    margin-left: -30px;
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    margin-left: -40px;
-  }
-
-  @media (max-width: $laptop-width - 1) {
-    margin-left: -30px;
-  }
-
-  @media (max-width: $tablet-max-width - 1) {
-    margin-left: -20px;
-  }
-
-  @media (max-width: $mobile-max-width - 1) {
-    margin-left: 0;
-  }
-}
-
-@mixin grid-min-wrapper {
-  padding: 0 calc(100% / 5 + 10px);
-
-  @media (max-width: $desktop-max-width - 1) {
-    padding: 0 calc(100% / 5 + 10px);
-  }
-
-  @media (max-width: $desktop-width - 1) {
-    padding: 0;
-  }
-}
-
-@mixin desktop-only {
-  @media (min-width: $mobile-menu-width) {
-    @content;
-  }
-}
-
 @mixin center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
 }

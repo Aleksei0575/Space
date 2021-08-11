@@ -1,7 +1,7 @@
 /* Плагины */
 @import "plugins/normalize";
-@import "plugins/slick";
-@import "plugins/jquery.fancybox";
+// @import "plugins/slick";
+// @import "plugins/jquery.fancybox";
 
 /* Общие */
 @import "variables";
@@ -13,10 +13,10 @@
 
 
 /* Блоки */
-
+@import "blocks/container";
 
 /* Шапка */
-
+@import "blocks/header";
 
 /* Подвал */
 

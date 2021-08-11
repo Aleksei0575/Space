@@ -1,5 +1,5 @@
 html {
-  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-family: "SF Pro Display", "Arial", sans-serif;
   box-sizing: border-box;
   height: 100%;
 }
@@ -22,10 +22,10 @@ body {
   padding: 0;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
-  line-height: 1.2;
-  color: $black;
-  background-color: $white;
+  font-size: 18px;
+  line-height: 21px;
+  color: $white;
+  background-color: $black-bg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;

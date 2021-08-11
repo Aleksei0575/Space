@@ -50,10 +50,10 @@ gulp.task('jsPlugins', () => gulp.src(['source/js/plugins/*.js'])
   .pipe(gulp.dest('build/js/'))
 );
 
-gulp.task('json', () => gulp.src('source/json/*.json')
-  .pipe(plumber())
-  .pipe(gulp.dest('build/json'))
-);
+// gulp.task('json', () => gulp.src('source/json/*.json')
+//   .pipe(plumber())
+//   .pipe(gulp.dest('build/json'))
+// );
 
 gulp.task('images', () => gulp.src('source/img/**/*.{gif,png,jpg,svg}')
   .pipe(imagemin([
@@ -68,7 +68,7 @@ gulp.task('sprite', () => gulp.src('source/img/sprite/*.svg')
   .pipe(svgstore({
     inlineSvg: true
   }))
-  .pipe(rename('sprite.svg'))
+  .pipe(rename('sprite_auto.svg'))
   .pipe(gulp.dest('build/img'))
 );
 
@@ -76,7 +76,7 @@ gulp.task('copy', () => gulp.src([
     'source/fonts/**/*.{ttf,woff,woff2}',
     'source/img/**',
     'source/favicon/*',
-    'source/json/**',
+    // 'source/json/**',
   ],
   {
     base: 'source'
@@ -104,4 +104,5 @@ gulp.task('serve', () => {
   gulp.watch('source/js/**/*.js', gulp.series('jsPlugins', 'js')).on('change', server.reload);
 });
 
-gulp.task('build', gulp.series('clean', 'images', 'sprite', 'copy', 'style', 'html', 'js', 'json', 'jsPlugins'));
+gulp.task('build', gulp.series('clean', 'images', 'sprite', 'copy', 'style', 'html', 'js', 'jsPlugins'));
+gulp.task(`start`, gulp.series(`build`, `serve`));
