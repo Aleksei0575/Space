@@ -1,0 +1,28 @@
+$desktop-max-width: 1690px; /* от 1690 – макеты 1690 или 1920 */
+$desktop-medium-width: 1630px; /* 1630-1689 рх – макеты 1630 */
+$desktop-width: 1480px; /* 1480-1629 рх – макеты 1480 */
+$laptop-width: 1030px; /* 1030-1479 рх – макеты 1450 */
+$tablet-max-width: 990px; /* 990-1029 рх – ориентироваться на макеты 1630, но колонок здесь не 5, а 3 */
+$tablet-width: 920px; /* 920-989 рх – макетов нет, но ориентироваться на 620 + одна колонка */
+$mobile-max-width: 620px; /* 620-919 рх – макеты 620 */
+$mobile-width: 320px; /* 320-619 рх – макеты 320 */
+
+$mobile-menu-width: 1200px;
+
+$black: #000000;
+$black-bg: #1a1a1a;
+$dark: #505050;
+$dark-text: #4f4f4f;
+$grey: #e6e6e6;
+$dark-grey: #787878;
+$grey-hover: #d2d2d2;
+$white: #ffffff;
+$light: #ebebeb;
+$red: #ff0000;
+$border-color: #b4b4b4;
+$transparent: rgba(0, 0, 0, 0);
+
+$retina2x-dpi: 144dpi;
+$retina2x-dppx: 1.5dppx;
+
+$style-change-duration: 0.2s;
