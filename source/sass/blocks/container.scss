@@ -4,6 +4,10 @@
   margin: 0 auto;
   padding: 0;
 
+  @include viewport--lav {
+    padding: 0 50px;
+  }
+
   @include viewport--lg {
     padding: 0 30px;
   }

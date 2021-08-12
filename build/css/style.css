@@ -314,7 +314,7 @@ template {
 @font-face {
   font-family: 'SF Pro Display';
   font-display: swap;
-  src: url("fonts/SFProDisplay-Bold.woff2") format("woff2"), url("fonts/SFProDisplay-Bold.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
@@ -380,7 +380,8 @@ body {
     bottom: 0; }
 
 a {
-  color: inherit; }
+  color: inherit;
+  text-decoration: none; }
 
 img {
   max-width: 100%;
@@ -413,6 +414,9 @@ input:invalid {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0; }
+  @media (max-width: 1250px) {
+    .container {
+      padding: 0 50px; } }
   @media (max-width: 1023px) {
     .container {
       padding: 0 30px; } }
@@ -420,7 +424,193 @@ input:invalid {
     .container {
       padding: 0 20px; } }
 
+.header-info {
+  width: 100%; }
+
+.header-info__title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  font-family: "Space Age Cyrillic Regular", "Arial", sans-serif;
+  margin: 0; }
+  .header-info__title span {
+    font-size: 110px;
+    line-height: 106px;
+    display: block;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+    @media (max-width: 900px) {
+      .header-info__title span {
+        font-size: 82px;
+        line-height: 82px; } }
+  @media (max-width: 900px) {
+    .header-info__title {
+      font-size: 45px;
+      line-height: 45px; } }
+
+.header-info__block-slogan {
+  width: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 49px; }
+  .header-info__block-slogan p {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0; }
+    @media (max-width: 900px) {
+      .header-info__block-slogan p {
+        font-size: 17px;
+        line-height: 19px; } }
+
+.btn {
+  font-size: 24px;
+  line-height: 29px;
+  width: 100%;
+  display: inline-block;
+  padding: 15px 30px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #ffffff; }
+  .btn:hover, .btn:focus {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    color: #cb0e0e;
+    border-color: #cb0e0e; }
+  @media (max-width: 900px) {
+    .btn {
+      font-size: 20px;
+      line-height: 24px; } }
+
+.header-description p {
+  font-size: 14px;
+  line-height: 17px;
+  width: 43.3%; }
+
 /* Шапка */
+.header {
+  width: 100%;
+  min-height: 1100px;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  @media (max-width: 900px) {
+    .header {
+      min-height: 980px; } }
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 74px 0 299px; }
+
+.header__nav {
+  width: 48.2%;
+  margin-right: 20%; }
+  @media (max-width: 1250px) {
+    .header__nav {
+      width: auto;
+      margin-right: 0; } }
+  @media (max-width: 1023px) {
+    .header__nav {
+      font-size: 14px;
+      line-height: 16px; } }
+
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 31px; }
+
+.header__nav-link {
+  padding: 10px 0;
+  text-transform: uppercase; }
+  .header__nav-link:hover, .header__nav-link:focus {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    color: #cb0e0e; }
+
+.header__phone {
+  width: 20.6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 1250px) {
+    .header__phone {
+      width: auto;
+      margin-left: auto; } }
+  @media (max-width: 1023px) {
+    .header__phone {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.header__phone-link {
+  font-size: 24px;
+  line-height: 29px;
+  padding-right: 5px; }
+  .header__phone-link:hover, .header__phone-link:focus {
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    color: #cb0e0e; }
+  @media (max-width: 1023px) {
+    .header__phone-link {
+      font-size: 16px;
+      line-height: 18px; } }
+
+@media (max-width: 1023px) {
+  .header__phone-icon {
+    width: 25px; } }
+
+.header__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 564px; }
+  @media (max-width: 900px) {
+    .header__bottom {
+      min-height: 450px; } }
+
+.header__bottom-info {
+  width: 50%; }
+
+.header__bottom-description {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
 /* Подвал */
 /* Карточка товара */
 /* main */

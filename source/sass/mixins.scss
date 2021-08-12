@@ -6,11 +6,11 @@
   }
 }
 
-// @mixin viewport--lav {
-//   @media (max-width: 1150px) {
-//     @content;
-//   }
-// }
+@mixin viewport--lav {
+  @media (max-width: 1250px) {
+    @content;
+  }
+}
 
 @mixin viewport--lg {
   @media (max-width: $viewport--xl - 1) {
@@ -24,11 +24,11 @@
   }
 }
 
-// @mixin viewport--av {
-//   @media (max-width: 825px) {
-//     @content;
-//   }
-// }
+@mixin viewport--av {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
 
 // @mixin viewport--sav {
 //   @media (max-width: 750px) {
@@ -66,6 +66,11 @@
   line-height: $line-height * 1px;
 }
 
+@mixin space {
+  font-weight: 400;
+  font-family: "Space Age Cyrillic Regular", "Arial", sans-serif;
+}
+
 @mixin pseudo-elem {
   position: absolute;
   content: "";
@@ -82,5 +87,18 @@
 @mixin retina {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @content;
+  }
+}
+
+@mixin hover {
+  outline: none;
+  cursor: pointer;
+
+  transition: $default-transition-settings;
+}
+
+@mixin not-hover {
+  &:not(:hover) {
+    transition: $default-transition-settings;
   }
 }

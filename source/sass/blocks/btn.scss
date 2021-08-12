@@ -1,0 +1,24 @@
+.btn {
+  @include font(24, 29);
+  width: 100%;
+  display: inline-block;
+  padding: 15px 30px;
+
+  vertical-align: middle;
+  text-align: center;
+  // color: $white;
+  text-transform: uppercase;
+  // text-decoration: none;
+  border: 1px solid $white;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: $red;
+    border-color: $red;
+  }
+
+  @include viewport--av {
+    @include font(20, 24);
+  }
+}

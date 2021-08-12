@@ -1,4 +1,109 @@
-// .header {
+.header {
+  width: 100%;
+  min-height: 1100px;
+  background-image: url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-// }
+  @include viewport--av {
+    min-height: 980px;
+  }
+}
 
+.header__top {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  padding: 74px 0 299px;
+}
+
+.header__nav {
+  width: 48.2%;
+  margin-right: 20%;
+
+  @include viewport--lav {
+    width: auto;
+    margin-right: 0;
+  }
+
+  @include viewport--lg {
+    @include font(14, 16);
+  }
+}
+
+.header__nav-list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  gap: 31px;
+}
+
+.header__nav-link {
+  padding: 10px 0;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: $red;
+  }
+}
+
+.header__phone {
+  width: 20.6%;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+
+  @include viewport--lav {
+    width: auto;
+    margin-left: auto;
+  }
+
+  @include viewport--lg {
+    align-items: center
+  }
+}
+
+.header__phone-link {
+  @include font(24, 29);
+  padding-right: 5px;
+
+  &:hover,
+  &:focus {
+    @include hover;
+    color: $red;
+  }
+
+  @include viewport--lg {
+    @include font(16, 18);
+  }
+}
+
+.header__phone-icon {
+  @include viewport--lg {
+    width: 25px;
+  }
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  min-height: 564px;
+
+  @include viewport--av {
+    min-height: 450px;
+  }
+}
+
+.header__bottom-info {
+  width: 50%;
+}
+
+.header__bottom-description {
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}

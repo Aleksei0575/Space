@@ -105,4 +105,4 @@ gulp.task('serve', () => {
 });
 
 gulp.task('build', gulp.series('clean', 'images', 'sprite', 'copy', 'style', 'html', 'js', 'jsPlugins'));
-gulp.task(`start`, gulp.series(`build`, `serve`));
+// gulp.task(`start`, gulp.series(`build`, `serve`));

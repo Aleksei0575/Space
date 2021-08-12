@@ -1,0 +1,6 @@
+.header-description {
+  p {
+    @include font(14, 17);
+    width: 43.3%;
+  }
+}

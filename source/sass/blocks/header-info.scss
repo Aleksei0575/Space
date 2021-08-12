@@ -1,0 +1,39 @@
+.header-info {
+  width: 100%;
+}
+
+.header-info__title {
+  @include font(60, 60);
+  @include space;
+  margin: 0;
+
+  span {
+    @include font(110, 106);
+    display: block;
+    transform: translateY(-20px);
+
+    @include viewport--av {
+      @include font(82, 82);
+    }
+  };
+
+  @include viewport--av {
+    @include font(45, 45);
+  }
+}
+
+.header-info__block-slogan {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
+
+  p {
+    @include font(24, 29);
+    margin: 0;
+
+    @include viewport--av {
+      @include font(17, 19);
+    }
+  }
+}
