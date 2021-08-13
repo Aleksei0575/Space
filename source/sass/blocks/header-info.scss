@@ -1,5 +1,19 @@
 .header-info {
   width: 100%;
+
+  .header-info__link-btn {
+    @include font(24, 29);
+
+    @include viewport--av {
+      @include font(18, 22);
+      padding: 10px 20px;
+    }
+
+    @include viewport--sm {
+      @include font(14, 18);
+      padding: 10px 20px;
+    }
+  }
 }
 
 .header-info__title {
@@ -15,10 +29,26 @@
     @include viewport--av {
       @include font(82, 82);
     }
+
+    @include viewport--sm {
+      @include font(55, 55);
+    }
+
+    @include viewport--xs {
+      @include font(46, 46);
+    }
   };
 
   @include viewport--av {
     @include font(45, 45);
+  }
+
+  @include viewport--sm {
+    @include font(30, 30);
+  }
+
+  @include viewport--xs {
+    @include font(25, 45);
   }
 }
 
@@ -35,5 +65,13 @@
     @include viewport--av {
       @include font(17, 19);
     }
+
+    @include viewport--sm {
+      margin: 10px 0;
+    }
+  }
+
+  @include viewport--sm {
+    flex-direction: column;
   }
 }
