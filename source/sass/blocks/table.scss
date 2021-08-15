@@ -6,6 +6,14 @@
   &--center {
     margin-bottom: 20px;
   }
+
+  @include viewport--mav {
+    text-align: center;
+  }
+
+  @include viewport--md {
+    width: 90%;
+  }
 }
 
 .table__row-top {
@@ -24,6 +32,10 @@
   td:last-child {
     padding: 10px 0 10px 10px;
   }
+
+  @include viewport--md {
+    @include font(12, 14);
+  }
 }
 
 .table__row-bottom {
@@ -35,9 +47,19 @@
   span {
     display: block;
     @include font(14, 17);
+    padding-bottom: 6px;
+
+    @include viewport--md {
+      @include font(12, 14);
+    }
+  }
+
+  @include viewport--md {
+    @include font(25, 29);
   }
 }
 
 .table__cost-info {
+  @include font(12, 14);
   margin: 0 0 50px;
 }

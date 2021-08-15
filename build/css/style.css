@@ -562,10 +562,15 @@ input:invalid {
   margin-bottom: 0; }
 
 .info-block__card-img {
-  width: calc(500 / 1200 * 100%); }
+  width: calc(500 / 1200 * 100%);
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .info-block__card-content {
   width: calc(601 / 1200 * 100%); }
+  @media (max-width: 959px) {
+    .info-block__card-content {
+      width: calc(645 / 1200 * 100%); } }
 
 .info-block__card-title {
   font-size: 30px;
@@ -598,9 +603,14 @@ input:invalid {
   font-size: 16px;
   line-height: 19px;
   width: calc(165 / 601 * 100%); }
+  @media (max-width: 959px) {
+    .card-desription__text {
+      font-size: 12px;
+      line-height: 14px; } }
 
 .card-desription__link-btn {
-  width: 300px; }
+  width: 300px;
+  padding: 19px 30px; }
 
 .table {
   width: 100%;
@@ -608,6 +618,12 @@ input:invalid {
   border-collapse: collapse; }
   .table--center {
     margin-bottom: 20px; }
+  @media (max-width: 1135px) {
+    .table {
+      text-align: center; } }
+  @media (max-width: 959px) {
+    .table {
+      width: 90%; } }
 
 .table__row-top {
   font-size: 16px;
@@ -620,6 +636,10 @@ input:invalid {
     padding: 10px; }
   .table__row-top td:last-child {
     padding: 10px 0 10px 10px; }
+  @media (max-width: 959px) {
+    .table__row-top {
+      font-size: 12px;
+      line-height: 14px; } }
 
 .table__row-bottom {
   font-size: 36px;
@@ -630,9 +650,20 @@ input:invalid {
   .table__row-bottom span {
     display: block;
     font-size: 14px;
-    line-height: 17px; }
+    line-height: 17px;
+    padding-bottom: 6px; }
+    @media (max-width: 959px) {
+      .table__row-bottom span {
+        font-size: 12px;
+        line-height: 14px; } }
+  @media (max-width: 959px) {
+    .table__row-bottom {
+      font-size: 25px;
+      line-height: 29px; } }
 
 .table__cost-info {
+  font-size: 12px;
+  line-height: 14px;
   margin: 0 0 50px; }
 
 /* Шапка */

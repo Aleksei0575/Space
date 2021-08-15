@@ -21,10 +21,15 @@
 .info-block__card-img {
   width: calc(500 / 1200 * 100%);
   // min-height: 540px;
+  object-fit: cover;
 }
 
 .info-block__card-content {
   width: calc(601 / 1200 * 100%);
+
+  @include viewport--md {
+    width: calc(645 / 1200 * 100%);
+  }
 }
 
 .info-block__card-title {
