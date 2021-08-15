@@ -1,0 +1,41 @@
+.info-block {
+  width: 100%;
+}
+
+.info-block__card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.info-block__card-center {
+  .info-block__card-img {
+    order: 1;
+  }
+}
+
+.info-block__card-bottom {
+  margin-bottom: 0;
+}
+
+.info-block__card-img {
+  width: calc(500 / 1200 * 100%);
+  // min-height: 540px;
+}
+
+.info-block__card-content {
+  width: calc(601 / 1200 * 100%);
+}
+
+.info-block__card-title {
+  @include font(30, 36);
+  margin: 0 0 5px;
+}
+
+.info-block__card-subtitle {
+  @include font(12, 14);
+  display: block;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+  color: $blue;
+}
