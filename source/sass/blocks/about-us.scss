@@ -1,0 +1,15 @@
+.about-us {
+  padding: 100px 0;
+  background-image:
+    url(../img/aboutUs-top-bg.png),
+    url(../img/about-us-bg.jpg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: left 0 top 0, left 0 top 0;
+  background-size: cover,cover;
+}
+
+.about-us__title {
+  @include font(48, 48);
+  @include space;
+  margin: 0 0 100px;
+}

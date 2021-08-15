@@ -527,6 +527,114 @@ input:invalid {
   line-height: 17px;
   width: 43.3%; }
 
+.about-us {
+  padding: 100px 0;
+  background-image: url(../img/aboutUs-top-bg.png), url(../img/about-us-bg.jpg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: left 0 top 0, left 0 top 0;
+  background-size: cover,cover; }
+
+.about-us__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  font-family: "Space Age Cyrillic Regular", "Arial", sans-serif;
+  margin: 0 0 100px; }
+
+.info-block {
+  width: 100%; }
+
+.info-block__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 150px; }
+
+.info-block__card-center .info-block__card-img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.info-block__card-bottom {
+  margin-bottom: 0; }
+
+.info-block__card-img {
+  width: calc(500 / 1200 * 100%); }
+
+.info-block__card-content {
+  width: calc(601 / 1200 * 100%); }
+
+.info-block__card-title {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 5px; }
+
+.info-block__card-subtitle {
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+  color: #036cca; }
+
+.card-desription {
+  width: 100%; }
+
+.card-description__text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px; }
+  .card-description__text-block p {
+    margin: 0; }
+
+.card-desription__text {
+  font-size: 16px;
+  line-height: 19px;
+  width: calc(165 / 601 * 100%); }
+
+.card-desription__link-btn {
+  width: 300px; }
+
+.table {
+  width: 100%;
+  margin-bottom: 50px;
+  border-collapse: collapse; }
+  .table--center {
+    margin-bottom: 20px; }
+
+.table__row-top {
+  font-size: 16px;
+  line-height: 19px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff; }
+  .table__row-top td:first-child {
+    padding: 10px 10px 10px 0; }
+  .table__row-top td {
+    padding: 10px; }
+  .table__row-top td:last-child {
+    padding: 10px 0 10px 10px; }
+
+.table__row-bottom {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #ffffff; }
+  .table__row-bottom span {
+    display: block;
+    font-size: 14px;
+    line-height: 17px; }
+
+.table__cost-info {
+  margin: 0 0 50px; }
+
 /* Шапка */
 .header {
   width: 100%;

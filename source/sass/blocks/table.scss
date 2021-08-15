@@ -1,0 +1,43 @@
+.table {
+  width: 100%;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+
+  &--center {
+    margin-bottom: 20px;
+  }
+}
+
+.table__row-top {
+  @include font(16, 19);
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+
+  td:first-child {
+    padding: 10px 10px 10px 0;
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  td:last-child {
+    padding: 10px 0 10px 10px;
+  }
+}
+
+.table__row-bottom {
+  @include font(36, 43);
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid $white;
+
+  span {
+    display: block;
+    @include font(14, 17);
+  }
+}
+
+.table__cost-info {
+  margin: 0 0 50px;
+}

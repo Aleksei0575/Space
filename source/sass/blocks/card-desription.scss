@@ -1,0 +1,22 @@
+.card-desription {
+  width: 100%;
+}
+
+.card-description__text-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.card-desription__text {
+  @include font(16, 19);
+  width: calc(165 / 601 * 100%);
+}
+
+.card-desription__link-btn {
+  width: 300px;
+}
