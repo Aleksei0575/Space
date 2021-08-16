@@ -12,4 +12,8 @@
   @include font(48, 48);
   @include space;
   margin: 0 0 100px;
+
+  @include viewport--xs {
+    margin: 0 0 50px;
+  }
 }

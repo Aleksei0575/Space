@@ -6,11 +6,24 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
+
+  @include viewport--sm {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @include viewport--xs {
+    margin-bottom: 90px;
+  }
 }
 
 .info-block__card-center {
   .info-block__card-img {
     order: 1;
+
+    @include viewport--sm {
+      order: 0;
+    }
   }
 }
 
@@ -22,6 +35,12 @@
   width: calc(500 / 1200 * 100%);
   // min-height: 540px;
   object-fit: cover;
+
+  @include viewport--sm {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: initial;
+  }
 }
 
 .info-block__card-content {
@@ -29,6 +48,10 @@
 
   @include viewport--md {
     width: calc(645 / 1200 * 100%);
+  }
+
+  @include viewport--sm {
+    width: 100%;
   }
 }
 
