@@ -17,4 +17,14 @@
     color: $red;
     border-color: $red;
   }
+
+  @include viewport--av {
+    @include font(18, 22);
+    padding: 10px 20px;
+  }
+
+  @include viewport--sm {
+    @include font(14, 18);
+    padding: 10px 20px;
+  }
 }

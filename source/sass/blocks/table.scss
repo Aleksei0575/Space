@@ -14,6 +14,10 @@
   @include viewport--md {
     width: 90%;
   }
+
+  @include viewport--sm {
+    width: 100%;
+  }
 }
 
 .table__row-top {
@@ -36,6 +40,10 @@
   @include viewport--md {
     @include font(12, 14);
   }
+
+  @include viewport--sav {
+    display: none;
+  }
 }
 
 .table__row-bottom {
@@ -52,10 +60,36 @@
     @include viewport--md {
       @include font(12, 14);
     }
+
+    @include viewport--sav {
+      display: inline-block;
+      margin-left: 5px;
+    }
   }
 
   @include viewport--md {
     @include font(25, 29);
+  }
+
+  @include viewport--sav {
+    @include font(18, 22);
+    display: block;
+    border-top: 1px solid $white;
+
+    td {
+      display: block;
+      text-align: right;
+      border-bottom: 1px solid $white;
+
+      &::before {
+        content: attr(aria-label);
+        float: left;
+      }
+    }
+
+    td:last-child {
+      border-bottom: none;
+    }
   }
 }
 

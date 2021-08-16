@@ -24,4 +24,18 @@
 .card-desription__link-btn {
   width: 300px;
   padding: 19px 30px;
+
+  @include viewport--av {
+    @include font(18, 22);
+    padding: 10px 20px;
+  }
+
+  @include viewport--sm {
+    @include font(14, 18);
+    padding: 10px 20px;
+  }
+
+  @include viewport--xs {
+    width: 100%;
+  }
 }
