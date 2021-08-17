@@ -1,0 +1,72 @@
+.how-working {
+  width: 100%;
+  min-height: 999px;
+  padding: 100px 0;
+  background-image: url('../img/how-working-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include viewport--sav {
+    min-height: auto;
+  }
+}
+
+.how-working__title {
+  @include font(48, 48);
+  @include space;
+  width: 578px;
+  margin: 0;
+
+  @include viewport--sav {
+    width: 100%;
+  }
+
+  @include viewport--sm {
+    @include font(35, 35);
+  }
+}
+
+.how-working__img-block {
+  width: min-content;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  @include viewport--lg {
+    width: 100%;
+  }
+
+  @include viewport--sm {
+    padding-top: 50px;
+  }
+}
+
+.how-working__image {
+  @include viewport--lg {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+.how-working__elem {
+  &--word {
+    animation: fadeIn 5s infinite;
+  }
+
+  &--circle {
+    animation: fadeIn 3s infinite;
+  }
+}
+
+.how-working__line-animation {
+  stroke-dashoffset: 600;
+	stroke-dasharray: 600;
+	animation: animline 5s infinite 3s;
+}
+
+@keyframes animline {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+

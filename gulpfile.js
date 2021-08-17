@@ -38,6 +38,23 @@ gulp.task('style', () => gulp.src('source/sass/style.scss')
   .pipe(server.stream())
 );
 
+gulp.task('css', () => gulp.src(['node_modules/animate.css/animate.css',])
+  .pipe(concat('_libs.scss'))
+  .pipe(gulp.dest('source/sass/plugins'))
+  .pipe(server.stream())
+);
+
+// gulp.task('css', function(){
+//   return gulp.src([
+//     'node_modules/normalize.css/normalize.css',
+//     'node_modules/slick-carousel/slick/slick.css',
+//     'node_modules/animate.css/animate.css',
+//   ])
+//     .pipe(concat('_libs.scss'))
+//     .pipe(gulp.dest('app/scss'))
+//     .pipe(browserSync.reload({stream: true}))
+// });
+
 gulp.task('js', () => gulp.src(['source/js/**/*.js', '!source/js/plugins/*.js'])
   .pipe(plumber())
   .pipe(concat('main.js'))
@@ -104,5 +121,5 @@ gulp.task('serve', () => {
   gulp.watch('source/js/**/*.js', gulp.series('jsPlugins', 'js')).on('change', server.reload);
 });
 
-gulp.task('build', gulp.series('clean', 'images', 'sprite', 'copy', 'style', 'html', 'js', 'jsPlugins'));
+gulp.task('build', gulp.series('clean', 'images', 'sprite', 'copy', 'style', 'css', 'html', 'js', 'jsPlugins'));
 // gulp.task(`start`, gulp.series(`build`, `serve`));
