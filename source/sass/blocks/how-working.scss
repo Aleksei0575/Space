@@ -25,6 +25,10 @@
   @include viewport--sm {
     @include font(35, 35);
   }
+
+  @include viewport--xs {
+    @include font(23, 23);
+  }
 }
 
 .how-working__img-block {
@@ -49,9 +53,9 @@
 }
 
 .how-working__elem {
-  &--word {
-    animation: fadeIn 5s infinite;
-  }
+  // &--word {
+  //   animation: fadeIn 5s infinite;
+  // }
 
   &--circle {
     animation: fadeIn 3s infinite;

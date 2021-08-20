@@ -6,6 +6,10 @@
   background-repeat: no-repeat,no-repeat;
   background-position: left 0 top 0, center;
   background-size: cover,cover;
+
+  // @include viewport--sav {
+  //   min-height: auto;
+  // }
 }
 
 .about-us__title {
@@ -13,7 +17,12 @@
   @include space;
   margin: 0 0 100px;
 
+  @include viewport--sm {
+    @include font(35, 35);
+  }
+
   @include viewport--xs {
+    @include font(23, 23);
     margin: 0 0 50px;
   }
 }
