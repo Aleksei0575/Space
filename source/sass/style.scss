@@ -1,8 +1,6 @@
 /* Плагины */
 @import "plugins/normalize";
 @import "plugins/libs";
-// @import "plugins/animate";
-// @import	"plugins/animations/fade-enter/fadeIn";
 // @import "plugins/slick";
 // @import "plugins/jquery.fancybox";
 
@@ -25,6 +23,7 @@
 @import "blocks/card-desription";
 @import "blocks/table";
 @import "blocks/how-working";
+@import "blocks/promo";
 
 /* Шапка */
 @import "blocks/header";

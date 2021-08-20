@@ -3138,8 +3138,14 @@ input:invalid {
   font-weight: 400;
   font-family: "Space Age Cyrillic Regular", "Arial", sans-serif;
   margin: 0 0 100px; }
+  @media (max-width: 599px) {
+    .about-us__title {
+      font-size: 35px;
+      line-height: 35px; } }
   @media (max-width: 479px) {
     .about-us__title {
+      font-size: 23px;
+      line-height: 23px;
       margin: 0 0 50px; } }
 
 .info-block {
@@ -3355,6 +3361,10 @@ input:invalid {
     .how-working__title {
       font-size: 35px;
       line-height: 35px; } }
+  @media (max-width: 479px) {
+    .how-working__title {
+      font-size: 23px;
+      line-height: 23px; } }
 
 .how-working__img-block {
   width: -webkit-min-content;
@@ -3374,10 +3384,6 @@ input:invalid {
     width: 90vw;
     height: auto; } }
 
-.how-working__elem--word {
-  -webkit-animation: fadeIn 5s infinite;
-          animation: fadeIn 5s infinite; }
-
 .how-working__elem--circle {
   -webkit-animation: fadeIn 3s infinite;
           animation: fadeIn 3s infinite; }
@@ -3395,6 +3401,76 @@ input:invalid {
 @keyframes animline {
   to {
     stroke-dashoffset: 0; } }
+
+.promo {
+  width: 100%;
+  min-height: 914px;
+  padding: 95px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(8.85%, #010203), color-stop(86.98%, rgba(1, 2, 3, 0))), url("../img/promo-bg.jpg");
+  background-image: linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%), url("../img/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left 0 top -6px;
+  background-size: cover; }
+  @media (max-width: 767px) {
+    .promo {
+      min-height: auto; } }
+
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 1023px) {
+    .promo__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.promo__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  font-family: "Space Age Cyrillic Regular", "Arial", sans-serif;
+  width: 48%;
+  margin: 0; }
+  @media (max-width: 1023px) {
+    .promo__title {
+      margin: 0 0 50px; } }
+  @media (max-width: 767px) {
+    .promo__title {
+      width: 100%; } }
+  @media (max-width: 599px) {
+    .promo__title {
+      font-size: 35px;
+      line-height: 35px; } }
+  @media (max-width: 479px) {
+    .promo__title {
+      font-size: 23px;
+      line-height: 23px; } }
+
+.promo__content {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 1023px) {
+    .promo__content {
+      width: 50%; } }
+  @media (max-width: 599px) {
+    .promo__content {
+      width: 100%; } }
+
+.promo__text {
+  width: 43%;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px; }
 
 /* Шапка */
 .header {
