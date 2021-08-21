@@ -1,0 +1,158 @@
+.additional-offer {
+  width: 100%;
+  margin-bottom: 200px;
+  // background-image:
+  //   url("../img/additional-block-img.png");
+  // background-repeat: no-repeat;
+  // background-position: right 0 top 230px;
+  // background-size: auto auto;
+
+  @include viewport--sav {
+    margin-bottom: 65px;
+  }
+}
+
+.additional-offer__title {
+  @include font(48, 48);
+  @include space;
+  width: 50%;
+  margin: 0 0 85px;
+
+  @include viewport--lg {
+    margin: 0 0 50px;
+  }
+
+  @include viewport--sav {
+    width: 100%;
+  }
+
+  @include viewport--sm {
+    @include font(35, 35);
+  }
+
+  @include viewport--xs {
+    @include font(23, 23);
+  }
+}
+
+.additional-offer__block {
+  display: flex;
+  justify-content: space-between;
+
+  @include viewport--lg {
+    flex-direction: column;
+  }
+}
+
+.additional-offer__info {
+  width: 52%;
+
+  @include viewport--lg {
+    width: 58%;
+    margin-bottom: 50px;
+  }
+
+  @include viewport--sav {
+    margin-bottom: 160px;
+    width: 100%;
+  }
+}
+
+.additional-offer__info-text {
+  margin: 0 0 25px;
+  padding-top: 15px;
+  @include font(24, 29);
+
+  @include viewport--sm {
+    @include font(18, 24);
+  }
+}
+
+.additional-offer__info-list {
+  @include list-reset;
+  margin-bottom: 25px;
+
+  li {
+    @include font(24, 29);
+    padding-left: 36px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: $white;
+      border-radius: 50%;
+    }
+
+    @include viewport--sm {
+      @include font(18, 24);
+    }
+  }
+}
+
+.additional-offer__info-cost {
+  @include font(12, 14);
+  margin: 0;
+  color: $gray;
+}
+
+.additional-offer__link {
+  width: 42%;
+
+  @include viewport--lg {
+    align-self: flex-end;
+  }
+
+  @include viewport--sav {
+    align-self: flex-start;
+    width: 100%;
+  }
+}
+
+.additional-offer__link-foto {
+  padding: 17px 30px;
+  position: relative;
+  margin-bottom: 49px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 192px;
+    height: 150px;
+    top: -131px;
+    right: 0px;
+    background-image: url("../img/additional-block-img.png");
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    background-size: cover;
+  }
+
+  @include viewport--av {
+    @include font(16, 20);
+  }
+
+  @include viewport--sm {
+    @include font(15, 19);
+    padding: 10px;
+  }
+}
+
+.additional-offer__link-disc {
+  padding: 17px 30px;
+
+  @include viewport--av {
+    @include font(16, 20);
+  }
+
+  @include viewport--sm {
+    @include font(15, 19);
+    padding: 10px;
+  }
+}

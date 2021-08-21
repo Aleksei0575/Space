@@ -1,0 +1,52 @@
+.offer {
+  width: 100%;
+  min-height: 2359px;
+  padding: 95px 0;
+  background-image: linear-gradient(0deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%),
+     url('../img/offer-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: left 0 top 0;
+  background-size: cover;
+
+  @include viewport--sav {
+    min-height: auto;
+  }
+}
+
+.offer__slider-block {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 100px 200px;
+  border: 1px solid $white;
+
+  @include viewport--md {
+    padding: 50px 100px;
+  }
+
+  @include viewport--av {
+    padding: 50px;
+  }
+
+  @include viewport--sm {
+    padding: 30px;
+  }
+
+  @include viewport--xs {
+    padding: 0;
+  }
+}
+
+.offer__slogan {
+  width: 100%;
+  @include font(24, 30);
+  @include space;
+  text-align: center;
+
+  @include viewport--sm {
+    @include font(20, 20);
+  }
+}
+
+.offer__slogan-text {
+  margin: 0;
+}

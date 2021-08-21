@@ -38,7 +38,9 @@ gulp.task('style', () => gulp.src('source/sass/style.scss')
   .pipe(server.stream())
 );
 
-gulp.task('css', () => gulp.src(['node_modules/animate.css/animate.css',])
+gulp.task('css', () => gulp.src(['node_modules/animate.css/animate.css',
+                        'node_modules/slick-carousel/slick/slick.css',
+                      ])
   .pipe(concat('_libs.scss'))
   .pipe(gulp.dest('source/sass/plugins'))
   .pipe(server.stream())
@@ -49,6 +51,14 @@ gulp.task('js', () => gulp.src(['source/js/**/*.js', '!source/js/plugins/*.js'])
   .pipe(concat('main.js'))
   .pipe(gulp.dest('build/js/'))
 );
+
+// gulp.task('jsSlick', () => ([
+//     'node_modules/slick-carousel/slick/slick.js',
+//   ])
+//   .pipe(plumber())
+//   .pipe(concat('vendor.js'))
+//   .pipe(gulp.dest('build/js/'))
+// );
 
 gulp.task('jsPlugins', () => gulp.src(['source/js/plugins/*.js'])
   .pipe(plumber())
