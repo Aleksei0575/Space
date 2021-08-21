@@ -1,0 +1,271 @@
+.cost-block {
+  width: 100%;
+  margin-bottom: 142px;
+
+  @include viewport--sav {
+    margin-bottom: 65px;
+  }
+}
+
+.cost-block__title {
+  @include font(48, 48);
+  @include space;
+  width: 40%;
+  margin: 0 0 100px;
+
+  @include viewport--lg {
+    margin: 0 0 50px;
+  }
+
+  @include viewport--sav {
+    width: 100%;
+  }
+
+  @include viewport--sm {
+    @include font(35, 35);
+  }
+
+  @include viewport--xs {
+    @include font(23, 23);
+  }
+}
+
+.cost-block__info {
+  display: flex;
+  justify-content: space-between;
+
+  @include viewport--xs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cost-block__left,
+.cost-block__right {
+  width: 42%;
+
+  @include viewport--sm {
+    width: 49%;
+  }
+
+  @include viewport--xs {
+    width: 65%;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.cost-block__left {
+  @include viewport--xs {
+    margin-bottom: 80px;
+  }
+}
+
+.cost-block__left-info {
+  margin-bottom: 25px;
+  padding: 43px 138px 38px;
+  text-align: center;
+  border: 1px solid $white;
+
+  @media (max-width: 1290px) {
+    padding: 43px 100px 38px;
+  }
+
+  @include viewport--lav {
+    padding: 43px 70px 38px;
+  }
+
+  @include viewport--av {
+    padding: 43px 30px 38px;
+  }
+
+  @include viewport--sav {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+  }
+}
+
+.cost-block__left-text {
+  @include font(24, 29);
+  margin: 0 0 146px;
+
+  span {
+    color: $red;
+  }
+
+  @include viewport--av {
+    @include font(20, 25);
+  }
+
+  @include viewport--sav {
+    @include font(18, 22);
+    margin-bottom: 0;
+  }
+}
+
+.cost-block__left-text ~ span {
+  position: relative;
+  @include font(48, 57);
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 68px;
+    height: 1px;
+    top: -26px;
+    right: -66px;
+    background-color: $red;
+    transform: rotate(17deg);
+    z-index: 3;
+
+    @include viewport--sav {
+      width: 55px;
+      top: -12px;
+      right: -50px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '250000 $';
+    display: block;
+    top: -35px;
+    right: -60px;
+    @include font(14, 17);
+    z-index: 1;
+
+    @include viewport--sav {
+      @include font(12, 15);
+      top: -18px;
+      right: -48px;
+    }
+  }
+
+  @include viewport--av {
+    @include font(30, 36);
+  }
+
+  @include viewport--sav {
+    @include font(24, 26);
+    align-self: center;
+  }
+}
+
+.cost-block__right-info {
+  margin-bottom: 25px;
+  padding: 37px 136px 38px;
+  text-align: center;
+  border: 1px solid $white;
+
+  @media (max-width: 1290px) {
+    padding: 43px 100px 38px;
+  }
+
+  @include viewport--lav {
+    padding: 43px 50px 38px;
+  }
+
+  @include viewport--av {
+    padding: 43px 30px 38px;
+  }
+
+  @include viewport--sav {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+  }
+}
+
+.cost-block__right-text {
+  @include font(24, 29);
+  margin: 0 0 152px;
+
+  span {
+    color: $red;
+  }
+
+  @media (max-width: 1290px) {
+    margin: 0 0 146px;
+  }
+
+  @include viewport--av {
+    @include font(20, 25);
+  }
+
+  @include viewport--sav {
+    @include font(18, 22);
+    margin-bottom: 0;
+  }
+}
+
+.cost-block__right-text ~ span {
+  position: relative;
+  @include font(48, 57);
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 68px;
+    height: 1px;
+    top: -26px;
+    right: -66px;
+    background-color: $red;
+    transform: rotate(17deg);
+    z-index: 3;
+
+    @include viewport--sav {
+      width: 55px;
+      top: -12px;
+      right: -50px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '250000 $';
+    display: block;
+    top: -35px;
+    right: -60px;
+    @include font(14, 17);
+    z-index: 1;
+
+    @include viewport--sav {
+      @include font(12, 15);
+      top: -18px;
+      right: -48px;
+    }
+  }
+
+  @include viewport--av {
+    @include font(30, 36);
+  }
+
+  @include viewport--sav {
+    @include font(24, 26);
+    align-self: center;
+  }
+}
+
+.cost-block__left-btn,
+.cost-block__right-btn {
+  padding: 17px 30px;
+
+  @include viewport--sav {
+    @include font(16, 20);
+    padding: 17px;
+  }
+
+  @include viewport--sm {
+    @include font(15, 19);
+    padding: 10px;
+  }
+}

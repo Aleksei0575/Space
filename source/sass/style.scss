@@ -1,7 +1,7 @@
 /* Плагины */
 @import "plugins/normalize";
 @import "plugins/libs";
-// @import "plugins/slick";
+@import "plugins/slick";
 // @import "plugins/jquery.fancybox";
 
 /* Общие */
@@ -24,6 +24,10 @@
 @import "blocks/table";
 @import "blocks/how-working";
 @import "blocks/promo";
+@import "blocks/offer";
+@import "blocks/cost-block";
+@import "blocks/additional-offer";
+@import "blocks/offer-slider";
 
 /* Шапка */
 @import "blocks/header";

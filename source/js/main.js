@@ -7,6 +7,52 @@
 //     }
 // 	});
 // });
+
+// Слайдер для блока offer
+$('.offer-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // arrows: false,
+  prevArrow: '<img class="offer-slider__arrows offer-slider__arrows--left" src="img/sprite/icon-arrow-left.svg" alt="Стрелка влево">',
+  nextArrow: '<img class="offer-slider__arrows offer-slider__arrows--right" src="img/sprite/icon-arrow-right.svg" alt="Стрелка вправо">',
+  // variableWidth: true,
+  focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          // focusOnSelect: true,
+				}
+			},
+			{
+				breakpoint: 960,
+				settings: {
+					slidesToShow: 1,
+          centerMode: true,
+          arrows: false,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+          centerMode: true,
+          arrows: false,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+          centerMode: true,
+          arrows: false,
+          variableWidth: true,
+				}
+			},
+		]
+});
 'use strict';
 // меню
 (function () {
