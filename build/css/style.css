@@ -3260,6 +3260,9 @@ input:invalid {
   text-align: center;
   text-transform: uppercase;
   border: 1px solid #ffffff; }
+  .btn:not(:hover) {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
   .btn:hover, .btn:focus {
     outline: none;
     cursor: pointer;
@@ -4109,6 +4112,175 @@ input:invalid {
 @media (max-width: 479px) {
   .offer-slider__img {
     width: 90%; } }
+
+.contacts {
+  padding: 97px 0;
+  background-color: #010203; }
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 767px) {
+    .contacts__container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.form {
+  width: 42%; }
+  @media (max-width: 900px) {
+    .form {
+      width: 45%; } }
+  @media (max-width: 767px) {
+    .form {
+      width: 100%;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+
+.form__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  font-family: "Space Age Cyrillic Regular", "Arial", sans-serif;
+  width: 69%;
+  margin: 0 0 49px; }
+  @media (max-width: 1023px) {
+    .form__title {
+      margin: 0 0 50px; } }
+  @media (max-width: 767px) {
+    .form__title {
+      width: 100%; } }
+  @media (max-width: 599px) {
+    .form__title {
+      font-size: 35px;
+      line-height: 35px; } }
+  @media (max-width: 479px) {
+    .form__title {
+      font-size: 23px;
+      line-height: 23px; } }
+
+.form__description {
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 0 84px; }
+  @media (max-width: 599px) {
+    .form__description {
+      font-size: 20px;
+      line-height: 25px; } }
+
+.form__feedback {
+  width: 100%; }
+
+.form__item {
+  width: 100%; }
+  .form__item input {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 19px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    caret-color: #ffffff;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+    .form__item input:not(:hover) {
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease; }
+    .form__item input::-webkit-input-placeholder {
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff; }
+    .form__item input::-moz-placeholder {
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff; }
+    .form__item input:-ms-input-placeholder {
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff; }
+    .form__item input::-ms-input-placeholder {
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff; }
+    .form__item input::placeholder {
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff; }
+    .form__item input:hover, .form__item input:focus {
+      outline: none;
+      cursor: pointer;
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+      border-bottom-color: #cb0e0e; }
+      .form__item input:hover::-webkit-input-placeholder, .form__item input:focus::-webkit-input-placeholder {
+        color: #cb0e0e; }
+      .form__item input:hover::-moz-placeholder, .form__item input:focus::-moz-placeholder {
+        color: #cb0e0e; }
+      .form__item input:hover:-ms-input-placeholder, .form__item input:focus:-ms-input-placeholder {
+        color: #cb0e0e; }
+      .form__item input:hover::-ms-input-placeholder, .form__item input:focus::-ms-input-placeholder {
+        color: #cb0e0e; }
+      .form__item input:hover::placeholder, .form__item input:focus::placeholder {
+        color: #cb0e0e; }
+
+.form__item-tel {
+  margin-bottom: 32px; }
+
+.form__btn {
+  padding: 19px 30px;
+  color: #ffffff;
+  background-color: transparent; }
+
+.garanty {
+  width: 50%; }
+  @media (max-width: 900px) {
+    .garanty {
+      width: 45%; } }
+  @media (max-width: 767px) {
+    .garanty {
+      width: 100%;
+      margin-bottom: 85px; } }
+
+.garanty__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  font-family: "Space Age Cyrillic Regular", "Arial", sans-serif;
+  width: 58%;
+  margin: 0 0 49px; }
+  @media (max-width: 1023px) {
+    .garanty__title {
+      margin: 0 0 50px; } }
+  @media (max-width: 767px) {
+    .garanty__title {
+      width: 100%; } }
+  @media (max-width: 599px) {
+    .garanty__title {
+      font-size: 35px;
+      line-height: 35px; } }
+  @media (max-width: 479px) {
+    .garanty__title {
+      font-size: 23px;
+      line-height: 23px; } }
+
+.garanty__cite {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0; }
+  @media (max-width: 599px) {
+    .garanty__cite {
+      font-size: 20px;
+      line-height: 25px; } }
+
+.garanty__text {
+  margin: 0; }
 
 /* Шапка */
 .header {
