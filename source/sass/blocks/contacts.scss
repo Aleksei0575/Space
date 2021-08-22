@@ -1,0 +1,13 @@
+.contacts {
+  padding: 97px 0;
+  background-color: $black-pearl-bg;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+
+  @include viewport--sav {
+    flex-direction: column;
+  }
+}

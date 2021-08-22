@@ -1,0 +1,90 @@
+.form {
+  width: 42%;
+
+  @include viewport--av {
+    width: 45%;
+  }
+
+  @include viewport--sav {
+    width: 100%;
+    order: 1;
+  }
+}
+
+.form__title {
+  @include font(48, 48);
+  @include space;
+  width: 69%;
+  margin: 0 0 49px;
+
+  @include viewport--lg {
+    margin: 0 0 50px;
+  }
+
+  @include viewport--sav {
+    width: 100%;
+  }
+
+  @include viewport--sm {
+    @include font(35, 35);
+  }
+
+  @include viewport--xs {
+    @include font(23, 23);
+  }
+}
+
+.form__description {
+  @include font(24, 26);
+  margin: 0 0 84px;
+
+  @include viewport--sm {
+    @include font(20, 25);
+  }
+}
+
+.form__feedback {
+  width: 100%;
+}
+
+.form__item {
+  width: 100%;
+
+  input {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 19px 0;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $white;
+    caret-color: $white;
+    appearance: none;
+    @include not-hover;
+
+    &::placeholder {
+      @include font (14, 17);
+      color: $white;
+    }
+
+    &:hover,
+    &:focus {
+      @include hover;
+      border-bottom-color: $red;
+
+      &::placeholder {
+        color: $red;
+      }
+    }
+  }
+}
+
+.form__item-tel {
+  margin-bottom: 32px;
+}
+
+.form__btn {
+  padding: 19px 30px;
+  color: $white;
+  background-color: transparent;
+}

@@ -1,0 +1,48 @@
+.garanty {
+  width: 50%;
+
+  @include viewport--av {
+    width: 45%;
+  }
+
+  @include viewport--sav {
+    width: 100%;
+    margin-bottom: 85px;
+  }
+}
+
+.garanty__title {
+  @include font(48, 48);
+  @include space;
+  width: 58%;
+  margin: 0 0 49px;
+
+  @include viewport--lg {
+    margin: 0 0 50px;
+  }
+
+  @include viewport--sav {
+    width: 100%;
+  }
+
+  @include viewport--sm {
+    @include font(35, 35);
+  }
+
+  @include viewport--xs {
+    @include font(23, 23);
+  }
+}
+
+.garanty__cite {
+  @include font(24, 29);
+  margin: 0;
+
+  @include viewport--sm {
+    @include font(20, 25);
+  }
+}
+
+.garanty__text {
+  margin: 0;
+}
