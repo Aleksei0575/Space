@@ -11,7 +11,7 @@
 @import "global";
 
 /* Форма */
-
+@import "blocks/form";
 
 /* Блоки */
 @import "blocks/container";
@@ -29,14 +29,13 @@
 @import "blocks/additional-offer";
 @import "blocks/offer-slider";
 @import "blocks/contacts";
-@import "blocks/form";
 @import "blocks/garanty";
 
 /* Шапка */
 @import "blocks/header";
 
 /* Подвал */
-
+@import "blocks/footer";
 
 /* Карточка товара */
 
