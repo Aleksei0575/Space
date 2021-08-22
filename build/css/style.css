@@ -3968,6 +3968,10 @@ input:invalid {
   @media (max-width: 767px) {
     .additional-offer__title {
       width: 100%; } }
+  @media (max-width: 640px) {
+    .additional-offer__title {
+      font-size: 43px;
+      line-height: 43px; } }
   @media (max-width: 599px) {
     .additional-offer__title {
       font-size: 35px;
@@ -4239,14 +4243,28 @@ input:invalid {
   background-color: transparent; }
 
 .garanty {
-  width: 50%; }
+  width: 50%;
+  background-image: url("../img/garanty-bg.png");
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+  background-size: auto auto; }
   @media (max-width: 900px) {
     .garanty {
-      width: 45%; } }
+      width: 45%;
+      background-size: 300px 300px; } }
   @media (max-width: 767px) {
     .garanty {
       width: 100%;
-      margin-bottom: 85px; } }
+      margin-bottom: 85px;
+      min-height: 300px;
+      background-size: 250px 250px; } }
+  @media (max-width: 599px) {
+    .garanty {
+      background-size: 200px 200px; } }
+  @media (max-width: 479px) {
+    .garanty {
+      min-height: auto;
+      background-image: none; } }
 
 .garanty__title {
   font-size: 48px;
@@ -4281,6 +4299,12 @@ input:invalid {
 
 .garanty__text {
   margin: 0; }
+  @media (max-width: 767px) {
+    .garanty__text {
+      width: 65%; } }
+  @media (max-width: 479px) {
+    .garanty__text {
+      width: 100%; } }
 
 /* Шапка */
 .header {
