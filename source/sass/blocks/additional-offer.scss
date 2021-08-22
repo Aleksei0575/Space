@@ -26,6 +26,10 @@
     width: 100%;
   }
 
+  @media (max-width: 640px) {
+    @include font(43, 43);
+  }
+
   @include viewport--sm {
     @include font(35, 35);
   }

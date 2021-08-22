@@ -1,13 +1,31 @@
 .garanty {
   width: 50%;
 
+  background-image:
+     url('../img/garanty-bg.png');
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+  background-size: auto auto;
+
   @include viewport--av {
     width: 45%;
+    background-size: 300px 300px;
   }
 
   @include viewport--sav {
     width: 100%;
     margin-bottom: 85px;
+    min-height: 300px;
+    background-size: 250px 250px;
+  }
+
+  @include viewport--sm {
+    background-size: 200px 200px;
+  }
+
+  @include viewport--xs {
+    min-height: auto;
+    background-image: none;
   }
 }
 
@@ -45,4 +63,12 @@
 
 .garanty__text {
   margin: 0;
+
+  @include viewport--sav {
+    width: 65%;
+  }
+
+  @include viewport--xs {
+    width: 100%;
+  }
 }
