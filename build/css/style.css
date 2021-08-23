@@ -3487,7 +3487,7 @@ input:invalid {
 .card-desription {
   width: 100%; }
 
-.card-description__text-block {
+.card-description__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3495,33 +3495,38 @@ input:invalid {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 50px; }
-  .card-description__text-block p {
+  .card-description__block p {
     margin: 0; }
 
-.card-desription__text {
+.card-description__text {
   font-size: 16px;
   line-height: 19px;
   width: calc(165 / 601 * 100%); }
   @media (max-width: 959px) {
-    .card-desription__text {
+    .card-description__text {
       font-size: 12px;
       line-height: 14px; } }
 
-.card-desription__link-btn {
+.card-description__table-info {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0 0 50px; }
+
+.card-description__link-btn {
   width: 300px;
   padding: 19px 30px; }
   @media (max-width: 900px) {
-    .card-desription__link-btn {
+    .card-description__link-btn {
       font-size: 18px;
       line-height: 22px;
       padding: 10px 20px; } }
   @media (max-width: 599px) {
-    .card-desription__link-btn {
+    .card-description__link-btn {
       font-size: 14px;
       line-height: 18px;
       padding: 10px 20px; } }
   @media (max-width: 479px) {
-    .card-desription__link-btn {
+    .card-description__link-btn {
       width: 100%; } }
 
 .table {
@@ -3597,11 +3602,6 @@ input:invalid {
           float: left; }
       .table__row-bottom td:last-child {
         border-bottom: none; } }
-
-.table__cost-info {
-  font-size: 12px;
-  line-height: 14px;
-  margin: 0 0 50px; }
 
 .how-working {
   width: 100%;

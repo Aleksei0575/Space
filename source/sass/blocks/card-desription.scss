@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.card-description__text-block {
+.card-description__block {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
@@ -12,7 +12,7 @@
   }
 }
 
-.card-desription__text {
+.card-description__text {
   @include font(16, 19);
   width: calc(165 / 601 * 100%);
 
@@ -21,7 +21,12 @@
   }
 }
 
-.card-desription__link-btn {
+.card-description__table-info {
+  @include font(12, 14);
+  margin: 0 0 50px;
+}
+
+.card-description__link-btn {
   width: 300px;
   padding: 19px 30px;
 
